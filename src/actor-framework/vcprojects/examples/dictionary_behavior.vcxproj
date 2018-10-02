@@ -198,9 +198,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;..\libcaf_core\Release\caf_core_static.lib;..\libcaf_io\Release\caf_io_static.lib;..\libcaf_openssl\Release\caf_openssl_static.lib;..\libcaf_io\Release\caf_io_static.lib;..\libcaf_core\Release\caf_core_static.lib;ws2_32.lib;iphlpapi.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;libcaf_core_static.lib;libcaf_io_static.lib;libcaf_openssl_static.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>G:/Sources/actor-framework/vcprojects/examples/Release/dictionary_behavior.lib</ImportLibrary>
@@ -241,9 +240,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;..\libcaf_core\Release\caf_core_static.lib;..\libcaf_io\Release\caf_io_static.lib;..\libcaf_openssl\Release\caf_openssl_static.lib;..\libcaf_io\Release\caf_io_static.lib;..\libcaf_core\Release\caf_core_static.lib;ws2_32.lib;iphlpapi.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;libcaf_core_static.lib;libcaf_io_static.lib;libcaf_openssl_static.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>G:/Sources/actor-framework/vcprojects/examples/Release/dictionary_behavior.lib</ImportLibrary>
