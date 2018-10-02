@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2DC58CFB-3137-3BD3-85F8-C420F3A1E05B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>caf-test</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;crypt32.lib;libcaf_core_static.lib;libcaf_io_static.lib;libcaf_openssl_static.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;crypt32.lib;libcaf_core_static.lib;libcaf_io_static.lib;libcaf_openssl_static.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;crypt32.lib;libcaf_core_static.lib;libcaf_io_static.lib;libcaf_openssl_static.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\ThirdPartyLibrary\openssl\include;$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\actor-framework\libcaf_openssl;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;iphlpapi.lib;crypt32.lib;libcaf_core_static.lib;libcaf_io_static.lib;libcaf_openssl_static.lib;ssleay32.lib;libeay32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\actor-framework\libcaf_test\src\caf-test.cpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_test\caf\test\unit_test.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_test\caf\test\unit_test_impl.hpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\actor_clock.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\actor_factory.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\actor_lifetime.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\actor_pool.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\actor_termination.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\aout.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\atom.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\behavior.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\blocking_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\bounds_checker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\broadcast_downstream_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\composable_behavior.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\composition.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\config_option.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\config_option_set.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\config_value.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\constructor_attach.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\continuous_streaming.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\custom_exception_handler.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\deep_to_string.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\delayed_send.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\detached_actors.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\dictionary.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\drr_cached_queue.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\drr_queue.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\dynamic_spawn.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\expected.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\extract.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\fifo_inbox.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\function_view.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\fused_streaming.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\handles.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\inbound_path.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\ini_consumer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\inspector.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\intrusive_ptr.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\ipv4_address.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\ipv4_subnet.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\ipv6_address.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\ipv6_subnet.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\lifo_inbox.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\limited_vector.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\local_group.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\local_migration.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\logger.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\mailbox_element.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\match.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\message.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\message_lifetime.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\metaprogramming.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\mock_streaming_classes.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\native_streaming_classes.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\optional.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\or_else.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\pipeline_streaming.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\read_atom.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\read_bool.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\read_ini.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\read_number.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\read_number_or_timespan.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\read_string.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\request_response.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\request_timeout.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\result.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\ripemd_160.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\runtime_settings_map.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\selective_streaming.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\sequencer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\serial_reply.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\serialization.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\simple_timeout.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\splitter.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\stateful_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\streambuf.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\string_view.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\sum_type.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\sum_type_token.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\task_queue.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\thread_hook.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\tick_emitter.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\to_string.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\type_erased_tuple.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\typed_response_promise.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\typed_spawn.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\unit.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\unordered_flat_map.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\uri.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\variant.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\wdrr_dynamic_multiplexed_queue.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\test\wdrr_fixed_multiplexed_queue.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\automatic_connection.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\basp.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\basp_udp.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\default_multiplexer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\dynamic_broker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\http_broker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\ip_endpoint.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\receive_buffer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\remote_actor.cpp">
+      <ObjectFileName>$(IntDir)/libcaf_io/test/remote_actor.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\remote_actor_udp.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\remote_group.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\remote_spawn.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\triggering.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\typed_broker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\typed_remote_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\test\unpublish.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_openssl\test\authentication.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_openssl\test\remote_actor.cpp">
+      <ObjectFileName>$(IntDir)/libcaf_openssl/test/remote_actor.cpp.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Sources\actor-framework\vcprojects\ZERO_CHECK.vcxproj">
+      <Project>{A7046867-95EE-364B-93C6-DE1DA206535A}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Sources\actor-framework\vcprojects\all_unit_tests.vcxproj">
+      <Project>{B9735C3F-F163-3F1E-9DAB-96FC031CEA78}</Project>
+      <Name>all_unit_tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Sources\actor-framework\vcprojects\libcaf_core\libcaf_core_static.vcxproj">
+      <Project>{4C583A1B-B5F8-3073-AA73-AC548C214975}</Project>
+      <Name>libcaf_core_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Sources\actor-framework\vcprojects\libcaf_io\libcaf_io_static.vcxproj">
+      <Project>{FC76BF7F-AD3E-37EE-8ED2-2186AE2FF302}</Project>
+      <Name>libcaf_io_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Sources\actor-framework\vcprojects\libcaf_openssl\libcaf_openssl_static.vcxproj">
+      <Project>{8A78026C-B48B-3364-9EE1-C68C6D0168BD}</Project>
+      <Name>libcaf_openssl_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

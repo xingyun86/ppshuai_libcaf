@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC76BF7F-AD3E-37EE-8ED2-2186AE2FF302}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libcaf_io_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\detail\call_cfun.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\detail\socket_guard.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\abstract_broker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\accept_handle.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\all.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\all.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\buffer_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\connection_state.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\endpoint_context.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\header.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\instance.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\message_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\routing_table.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp\version.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\basp_broker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\broker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\broker_servant.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\close.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\connect.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\connection_handle.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\connection_helper.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\datagram_handle.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\datagram_servant.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\doorman.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\fwd.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\handle.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\hook.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\middleman.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\middleman_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\middleman_actor_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\acceptor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\acceptor_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\acceptor_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\datagram_handler.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\datagram_handler_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\datagram_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\datagram_servant_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\default_multiplexer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\doorman_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\event_handler.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\interfaces.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\ip_endpoint.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\multiplexer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\native_socket.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\operation.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\pipe_reader.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\protocol.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\receive_buffer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\rw_state.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\scribe_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\stream.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\stream_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\stream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\network\test_multiplexer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\open.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\publish.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\publish_local_groups.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\receive_policy.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\remote_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\remote_group.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\scribe.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\system_messages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\typed_broker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\unpublish.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\io\visitors.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\policy\tcp.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_io\caf\policy\udp.hpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\abstract_broker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\acceptor_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\basp_broker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\broker.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\connection_helper.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\datagram_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\datagram_servant.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\default_multiplexer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\doorman.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\header.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\hook.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\instance.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\interfaces.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\ip_endpoint.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\message_type.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\middleman.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\middleman_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\middleman_actor_impl.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\multiplexer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\protocol.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\receive_buffer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\routing_table.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\scribe.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\stream_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\test_multiplexer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\acceptor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\datagram_handler.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\datagram_servant_impl.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\doorman_impl.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\event_handler.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\pipe_reader.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\scribe_impl.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\stream.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\tcp.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\udp.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\native_socket.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_io\src\socket_guard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Sources\actor-framework\vcprojects\libcaf_core\libcaf_core_static.vcxproj">
+      <Project>{4C583A1B-B5F8-3073-AA73-AC548C214975}</Project>
+      <Name>libcaf_core_static</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

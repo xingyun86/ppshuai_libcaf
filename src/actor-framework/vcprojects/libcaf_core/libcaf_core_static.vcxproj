@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4C583A1B-B5F8-3073-AA73-AC548C214975}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>libcaf_core_static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\actor-framework\libcaf_opencl;$(SolutionDir)..\actor-framework\libcaf_core;$(SolutionDir)..\actor-framework\libcaf_io;$(SolutionDir)..\actor-framework\libcaf_test;$(SolutionDir)..\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CppLanguageStandard>c++11</CppLanguageStandard>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Sources\actor-framework\actor-framework\libcaf_opencl;G:\Sources\actor-framework\actor-framework\libcaf_core;G:\Sources\actor-framework\actor-framework\libcaf_io;G:\Sources\actor-framework\actor-framework\libcaf_test;G:\Sources\actor-framework\vcprojects\libcaf_core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\abstract_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\abstract_channel.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\abstract_composable_behavior.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\abstract_group.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_addr.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_cast.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_clock.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_companion.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_config.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_control_block.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_factory.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_marker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_ostream.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_pool.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_proxy.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_registry.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_storage.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_system.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\actor_system_config.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\after.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\all.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\allowed_unsafe_message_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\atom.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\attachable.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\behavior.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\behavior_policy.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\binary_deserializer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\binary_serializer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\blocking_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\broadcast_downstream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\buffered_downstream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\byte_address.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\callback.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\catch_all.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\check_typed_input.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\composable_behavior.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\composable_behavior_based_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\composed_behavior.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\composed_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\config.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\config_option.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\config_option_adder.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\config_option_set.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\config_value.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\data_processor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\decorator\sequencer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\decorator\splitter.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\deduce_mpi.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\deep_to_string.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\default_attachable.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\default_downstream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\default_sum_type_access.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\defaults.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\delegated.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\deserializer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\algorithms.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\append_hex.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\apply_args.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\arg_match_t.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\arg_wrapper.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\atom_val.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\behavior_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\behavior_stack.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\blocking_behavior.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\bounds_checker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\cas_weak.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\comparable.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\concatenated_tuple.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\decorated_tuple.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\default_invoke_result_visitor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\delegate_serialize.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\disposer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\double_ended_queue.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\dynamic_message_data.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\embedded.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\enqueue_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\enum_to_string.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\functor_attachable.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\gcd.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\get_mac_addresses.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\get_process_id.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\get_root_uuid.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\ieee_754.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\implicit_conversions.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\ini_consumer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\init_fun_factory.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\int_list.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\invoke_result_visitor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\is_one_of.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\is_primitive_config_value.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\limited_vector.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\mask_bits.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\merged_tuple.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\message_data.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\move_if_not_ptr.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\mpi_splice.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\network_order.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\optional_message_visitor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\overload.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\add_ascii.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\ascii_to_int.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\chars.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\fsm.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\fsm_undef.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\is_char.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\is_digit.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_atom.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_bool.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_ini.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_ipv4_address.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_ipv6_address.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_number.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_number_or_timespan.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_string.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\read_uri.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\state.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\parser\sub_ascii.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\path_state.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\pp.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\pretty_type_name.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\private_thread.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\pseudo_tuple.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\raw_access.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\ripemd_160.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\safe_equal.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\scope_guard.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\select_all.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\select_integer_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\set_thread_name.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\shared_spinlock.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\simple_actor_clock.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\spawn_fwd.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\split_join.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\squashed_int.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_distribution_tree.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_sink_driver_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_sink_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_source_driver_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_source_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_stage_driver_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stream_stage_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\stringification_inspector.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\sync_request_bouncer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\tail_argument_token.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\tbind.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\test_actor_clock.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\thread_safe_actor_clock.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\tick_emitter.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\try_match.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\try_serialize.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\tuple_vals.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\type_erased_tuple_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\type_erased_value_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\type_list.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\type_name.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\type_pair.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\type_traits.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\typed_actor_util.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\unordered_flat_map.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\uri_impl.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\detail\variant_data.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\dictionary.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\downstream.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\downstream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\downstream_manager_base.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\downstream_msg.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\duration.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\error.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\event_based_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\exec_main.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\execution_unit.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\exit_reason.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\expected.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\extend.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\forwarding_actor_proxy.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\function_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\fused_downstream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\fwd.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\group.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\group_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\group_module.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\illegal_message_element.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\inbound_path.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\index_mapping.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\infer_handle.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\input_range.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\interface_mismatch.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\drr_cached_queue.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\drr_queue.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\fifo_inbox.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\forward_iterator.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\inbox_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\lifo_inbox.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\new_round_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\singly_linked.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\task_queue.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\task_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\wdrr_dynamic_multiplexed_queue.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive\wdrr_fixed_multiplexed_queue.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\intrusive_ptr.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\invalid_stream.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\invoke_message_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ip_address.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ip_subnet.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ipv4_address.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ipv4_subnet.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ipv6_address.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ipv6_subnet.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\is_message_sink.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\is_timeout_or_catch_all.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\is_typed_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\local_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\locks.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\logger.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\mailbox_element.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_config_option.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_counted.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_message.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_sink_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_source_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_stage_result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_type_erased_tuple_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_type_erased_value.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\make_type_erased_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\match_case.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\may_have_timeout.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\memory_managed.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\message.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\message_builder.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\message_handler.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\message_id.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\message_priority.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\message_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\annotation.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\hex_formatted.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\load_callback.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\omittable.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\omittable_if_empty.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\omittable_if_none.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\save_callback.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\meta\type_name.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\mixin\actor_widget.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\mixin\behavior_changer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\mixin\requester.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\mixin\sender.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\mixin\subscriber.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\monitorable_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\named_actor_config.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\no_stages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\node_id.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\none.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\optional.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\others.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\outbound_path.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\output_stream.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\param.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\pec.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\arg.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\categorized.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\downstream_messages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\normal_messages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\priority_aware.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\profiled.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\scheduler_policy.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\unprofiled.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\upstream_messages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\urgent_messages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\work_sharing.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\policy\work_stealing.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\primitive_variant.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\prohibit_top_level_spawn_marker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\proxy_registry.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\raise_error.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\raw_event_based_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\ref_counted.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\replies_to.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\response_handle.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\response_promise.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\response_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\result.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\resumable.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\runtime_settings_map.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduled_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduler.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduler\abstract_coordinator.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduler\coordinator.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduler\profiled_coordinator.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduler\test_coordinator.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scheduler\worker.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scoped_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\scoped_execution_unit.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\sec.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\send.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\serializer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\skip.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\spawn_options.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stateful_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\static_visitor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_aborter.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_deserializer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_finalize_trait.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_manager.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_priority.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_serializer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_sink.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_sink_driver.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_sink_trait.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_slot.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_source.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_source_driver.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_source_trait.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_stage.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_stage_driver.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\stream_stage_trait.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\streambuf.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\string_algorithms.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\string_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\sum_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\sum_type_access.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\sum_type_token.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\system_messages.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\tag\boxing_type.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\term.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\thread_hook.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\timeout_definition.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\timespan.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\timestamp.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\to_string.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\type_erased_tuple.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\type_erased_value.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\type_nr.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\typed_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\typed_actor_pointer.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\typed_actor_view.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\typed_behavior.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\typed_event_based_actor.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\typed_response_promise.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\uniform_type_info_map.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\unifyn.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\unit.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\unsafe_actor_handle_init.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\upstream_msg.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\uri.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\uri_builder.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\variant.hpp" />
+    <ClInclude Include="..\..\actor-framework\libcaf_core\caf\weak_intrusive_ptr.hpp" />
+    <ClInclude Include="G:\Sources\actor-framework\vcprojects\libcaf_core\caf\detail\build_config.hpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\abstract_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\abstract_channel.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\abstract_composable_behavior.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\abstract_coordinator.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\abstract_group.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_addr.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_clock.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_companion.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_config.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_control_block.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_ostream.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_pool.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_proxy.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_registry.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_system.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\actor_system_config.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\append_hex.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\atom.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\attachable.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\behavior.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\behavior_impl.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\behavior_stack.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\blocking_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\blocking_behavior.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\chars.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\concatenated_tuple.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\config_option.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\config_option_adder.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\config_option_set.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\config_value.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\decorated_tuple.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\default_attachable.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\defaults.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\deserializer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\downstream_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\downstream_manager_base.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\downstream_messages.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\duration.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\dynamic_message_data.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\error.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\event_based_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\execution_unit.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\exit_reason.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\forwarding_actor_proxy.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\get_mac_addresses.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\get_process_id.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\get_root_uuid.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\group.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\group_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\group_module.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\inbound_path.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ini_consumer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\invoke_result_visitor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ipv4_address.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ipv4_subnet.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ipv6_address.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ipv6_subnet.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\local_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\logger.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\mailbox_element.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\make_config_option.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\match_case.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\memory_managed.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\merged_tuple.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\message.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\message_builder.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\message_data.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\message_handler.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\message_view.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\monitorable_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\node_id.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\outbound_path.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\pec.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\pretty_type_name.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\private_thread.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\proxy_registry.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\raise_error.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\raw_event_based_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ref_counted.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\replies_to.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\response_promise.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\resumable.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\ripemd_160.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\runtime_settings_map.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\scheduled_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\scoped_actor.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\scoped_execution_unit.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\sec.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\sequencer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\serializer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\set_thread_name.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\shared_spinlock.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\simple_actor_clock.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\skip.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\splitter.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\stream_aborter.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\stream_manager.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\stream_priority.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\string_view.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\stringification_inspector.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\sync_request_bouncer.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\term.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\test_actor_clock.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\test_coordinator.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\thread_hook.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\thread_safe_actor_clock.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\tick_emitter.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\timestamp.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\try_match.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\type_erased_tuple.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\type_erased_value.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\uniform_type_info_map.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\unprofiled.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\uri.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\uri_builder.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\uri_impl.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\work_sharing.cpp" />
+    <ClCompile Include="..\..\actor-framework\libcaf_core\src\work_stealing.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
