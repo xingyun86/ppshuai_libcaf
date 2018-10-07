@@ -114,7 +114,7 @@
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/Sources/actor-framework/vcprojects/examples/Debug/group_server.lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -154,7 +154,7 @@
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/Sources/actor-framework/vcprojects/examples/Debug/group_server.lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -194,7 +194,7 @@
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/Sources/actor-framework/vcprojects/examples/Release/group_server.lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -234,7 +234,7 @@
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\ThirdPartyLibrary\openssl\lib\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>G:/Sources/actor-framework/vcprojects/examples/Release/group_server.lib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
